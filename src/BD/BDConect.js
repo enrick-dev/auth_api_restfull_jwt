@@ -85,9 +85,9 @@ dbPool.on('error', (err) => {
 //   reconnectNotificationClient();
 // });
 
-export const notificationClient = await dbPool.connect()
-await notificationClient.query('LISTEN update_pipeline');
-await notificationClient.query('LISTEN update_card');
+// export const notificationClient = await dbPool.connect()
+// await notificationClient.query('LISTEN update_pipeline');
+// await notificationClient.query('LISTEN update_card');
 
 
 
