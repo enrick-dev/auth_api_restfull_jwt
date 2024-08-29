@@ -19,8 +19,8 @@ const io = new Server(server, {
 });
 wsRoutes(io)
 
-server.listen(9090, () => {
-  console.log('Server running at http://localhost:9090');
+server.listen(8080, () => {
+  console.log('Server running at http://localhost:8080');
 });
 
 export { io };
