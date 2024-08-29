@@ -6,8 +6,6 @@ RUN mkdir -p /home/node/app
 
 WORKDIR /home/node/app
 
-RUN apt-get update -y && apt-get install -y openssl
-
 COPY --chown=node:node . .
 
 RUN npm install
