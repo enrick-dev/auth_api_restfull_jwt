@@ -10,6 +10,6 @@ COPY --chown=node:node . .
 
 RUN npm install
 
-EXPOSE 9090
+EXPOSE 8080
 
 CMD ["npm", "start"]
