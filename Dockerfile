@@ -1,5 +1,7 @@
 FROM node:21-slim
 
+RUN apt-get update -y && apt-get install -y openssl
+
 USER node
 
 RUN mkdir -p /home/node/app
