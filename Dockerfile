@@ -12,6 +12,8 @@ COPY --chown=node:node . .
 
 RUN npm install
 
+RUN npx prisma generate
+
 RUN npm run build
 
 CMD ["npm", "run", "start:prod"]
