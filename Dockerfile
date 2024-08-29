@@ -6,10 +6,12 @@ RUN mkdir -p /home/node/app
 
 WORKDIR /home/node/app
 
+RUN apt-get update -y && apt-get install -y openssl
+
 COPY --chown=node:node . .
 
 RUN npm install
 
-EXPOSE 8080
+RUN npm run build
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start:prod"]
