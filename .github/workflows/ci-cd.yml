@@ -18,7 +18,7 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: us-east1-docker.pkg.dev
-  IMAGE_NAME: nest-433802/teste/api
+  IMAGE_NAME: nest-433802/teste/make-api-node
 
 
 jobs:
